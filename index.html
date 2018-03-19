@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/ng-grid/ng-grid-2.0.1.min.js"></script>
+		<script src="node_modules/chart.js/dist/Chart.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="node_modules/ng-grid/ng-grid.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="src/css/index.css">
+
+	</head>
+	<body id="sm-container" ng-app="myApp">
+		<div id="bgcontainer" ng-controller="myCtrl">
+			<div id="wrapper">
+	<div id="origin" class="fbox">
+		<p class="column-heading">To do</p>
+    <ul id="sort1" class="list">
+      <div><input type="text"   placeholder="Add task" class="form-control" ng-model="task" id="create"><button type="button" ng-click="addItem()" class="btn">Add</button></div>
+    </ul>
+	</div>
+  
+	<div id="drop" class="fbox">
+	<p class="column-heading">In prgress</p>
+     <ul id="sort2" class="list">
+     </ul>
+	</div>
+
+
+	<div id="drop2" class="fbox">
+	<p class="column-heading">Done</p>
+     <ul id="sort3" class="list">
+     </ul>
+	</div>
+
+
+</div>
+			
+		</div>
+		<script src="src/js/index.js"></script>
+	</body>
+</html>
